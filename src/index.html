@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <title>Homework 19</title>
+    <link rel="stylesheet" type="text/css" href="styles/app.css" />
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header positioner ">
+            <div class="top">
+                <div class="small_logo">
+                    <img class="small_logo__img" src=<%= require("./img/gear.jpg")%> alt="gear.jpg">
+                    <div class="small_logo__text">
+                        <h1 class="small_logo__h1">Build Home</h1>
+                        <span class="small_logo__subtext">industrial theme</span>
+                    </div>
+                </div>
+                <div class="social">
+                    <ul class="social_list">
+                        <li class="social_list__item"><img src=<%= require("./img/social/facebook.png") %> alt="facebook.png"></li>
+                        <li class="social_list__item"><img src=<%= require("./img/social/twitter.png") %> alt="twitter.png"></li>
+                        <li class="social_list__item"><img src=<%= require("./img/social/rss.png") %> alt="rss.png"></li>
+                        <li class="social_list__item"><img src=<%= require("./img/social/linkedin.png") %> alt="linkedin.png"></li>
+                        <li class="social_list__item"><img src=<%= require("./img/social/skype.png") %> alt="skype.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main_menu">
+                <ul class="main_menu__buttons">
+                    <li class="main_menu__item"><a class="menu_button menu_button--active" href=""><span class="menu_button__text">home<span></a></li>
+                    <li class="main_menu__item"><a class="menu_button" href=""><span class="menu_button__text">features<span></a></li>
+                    <li class="main_menu__item"><a class="menu_button" href=""><span class="menu_button__text">services<span></a></li>
+                    <li class="main_menu__item"><a class="menu_button" href=""><span class="menu_button__text">news<span></a></li>
+                    <li class="main_menu__item"><a class="menu_button" href=""><span class="menu_button__text">shop<span></a></li>
+                </ul>
+                <div class="search">
+                    <input class="search__fild" type="text" name="find" value="Search">
+                    <span class="search__button"><img src=<%= require("./img/search.png") %> alt="search.png"></span>
+                </div>
+            </div>
+            <div class="slider">
+                <ul class="bxslider">
+                    <li><img src=<%= require("./img/Build-your-business.jpg") %> /></li>
+                    <li><img src=<%= require("./img/Build-your-business.jpg") %> /></li>
+                    <li><img src=<%= require("./img/Build-your-business.jpg") %> /></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end header -->
+        <div class="content">
+            <div class="articles positioner">
+                <div class="article_item">
+                    <div class="article_item__num">01</div>
+                    <div class="article_item__wrapper">
+                        <div class="context_image"><img src=<%= require("./img/settings.png") %> alt="gear"></div>
+                        <h4 class="article_item__cuption">Power Inside</h4>
+                        <article class="article_item__text">
+                            Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique
+                        </article>
+                        <a class="article_item__link" href="#">Read more </span></a>
+                    </div>
+                </div>
+                <div class="article_item">
+                    <div class="article_item__num">02</div>
+                    <div class="article_item__wrapper">
+                        <div class="context_image"><img src=<%= require("./img/params.png") %> alt="gear"></div>
+                        <h4 class="article_item__cuption">New Technologies</h4>
+                        <article class="article_item__text">
+                            Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique
+                        </article>
+                        <a class="article_item__link" href="#">Read more </span></a>
+                    </div>
+                </div>                
+                <div class="article_item">
+                    <div class="article_item__num">03</div>
+                    <div class="article_item__wrapper">
+                        <div class="context_image"><img src=<%= require("./img/settings.png") %> alt="gear"></div>
+                        <h4 class="article_item__cuption">Fast Support</h4>
+                        <article class="article_item__text">
+                            Cum sociis natoque penatibus et magnis dis parturient montesmus. Pro vel nibh et elit mollis commodo et nec augueique
+                        </article>
+                        <a class="article_item__link" href="#">Read more </span></a>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="services">
+                <h3 class="services_cuption positioner">Our Services</h3>
+                <div class="services-list positioner">
+                    <figure class="services-list__item">
+                        <p><img src=<%= require("./img/Schedule-Services.jpg") %> alt="Schedule-Services"></p>
+                        <figcaption class="services-item__caption">Schedule Services</figcaption>
+                    </figure>
+                    <figure class="services-list__item">
+                        <p><img src=<%= require("./img/Preventive_Maintence.jpg") %> alt="Preventive_Maintence"></p>
+                        <figcaption class="services-item__caption">Preventive Maintence</figcaption>
+                    </figure>
+                    <figure class="services-list__item">
+                        <p><img src=<%= require("./img/Tire&WheelServices.png") %> alt="Tire&WheelServices"></p>
+                        <figcaption class="services-item__caption">Tire &#38; Wheel Services</figcaption>
+                    </figure>
+                    <figure class="services-list__item">
+                        <p><img src=<%= require("./img/RepairServices.jpg") %> alt="RepairServices"></p>
+                        <figcaption class="services-item__caption">Repair Services</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="news_and_banners positioner">
+                <div class="news">
+                    <div class="news_item"></div>
+                </div>
+                <div class="banners"></div>
+            </div>
+            <div class="logotipes">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <!-- end content -->
+        <div class="footer"></div>
+    </div>
+</body>
+</html>
