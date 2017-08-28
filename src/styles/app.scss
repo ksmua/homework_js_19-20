@@ -1,8 +1,8 @@
 body {
     background-color: lightgrey;
-    p {
-        color: blue;
-    }
+    // p {
+    //     color: blue;
+    // }
 }
 
 *{
@@ -202,11 +202,11 @@ body {
     display: block;
     width: 75px;
     // height: 15px;
-    background: url('~/shape-1.gif') right center no-repeat;
+    background: url('~/../img/shape-1.gif') right center no-repeat;
 }
 
 .article_item__link:hover {
-    background: url('~/shape-2.gif') right center no-repeat;
+    background: url('~/../img/shape-2.gif') right center no-repeat;
     color: #248cec;
 }
 
@@ -236,4 +236,14 @@ body {
 
 .services-item__caption {
     margin-top: 35px;
+}
+
+.news_and_banners {
+    display: flex;
+    flex-direction: row;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
 }

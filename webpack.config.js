@@ -26,9 +26,26 @@ module.exports = {
         use: ExtractTextPlugin.extract({
           publicPath: BILD_DIR,
           fallback: 'style-loader',
-          use: 'css-loader'
+          use: [
+            {loader: 'css-loader', options: {sourceMap: true} }
+          ]
         })
       },
+      
+      {
+        test: /\.scss$/,
+        include: SRC_DIR, 
+        use: ExtractTextPlugin.extract({
+          fallback: 'style-loader',
+          use: [
+            {loader: 'css-loader', options: {sourceMap: true} }, 
+            {loader: 'resolve-url-loader', options: {sourceMap: true} }, 
+            {loader: 'sass-loader', options: {sourceMap: true} }
+          ],
+         
+        })
+      },
+      
       {
         test: /\.(png|svg|jp?g|gif)$/,
         include: SRC_DIR,
@@ -36,27 +53,14 @@ module.exports = {
           {
             loader: 'file-loader',
             options: {
-              publicPath: '/',
+              publicPath: '',
               name: '[name].[ext]',
-              outputPath: BILD_DIR + '/img/',
+              outputPath: 'img',
               useRelativePath: true
             }  
           }
         ]
-        
       },
-      {
-        test: /\.scss$/,
-        include: SRC_DIR, 
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: [
-            {loader: 'css-loader'}, 
-            {loader: 'sass-loader'}
-          ],
-         
-        })
-      }
     ]
   },
   
