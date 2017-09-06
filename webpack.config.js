@@ -61,6 +61,19 @@ module.exports = {
           }
         ]
       },
+      {
+        test: /\.(woff|woff2|otf|ttf|eot)(\?[a-z0-9#=&.]+)?$/,
+        include: SRC_DIR,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: '/fonts/',
+            },
+          },
+        ],
+      },
     ]
   },
   

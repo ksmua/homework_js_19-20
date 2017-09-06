@@ -1,4 +1,5 @@
 const css = require('../styles/app.scss');
+require('../styles/fonts.css');
 require('../styles/jquery.bxslider.css');
 require('../js/jquery.bxslider.js');
 //var $ = require('jquery'); 

@@ -1,5 +1,6 @@
 body {
     background-color: lightgrey;
+    font-family: 'Ubuntu Medium';
     // p {
     //     color: blue;
     // }
@@ -185,6 +186,7 @@ body {
     &__text {
         border: 1px solid green;
         font-size: 13px;
+        font-family: Arial;
     }
 
     &__link {
@@ -239,11 +241,48 @@ body {
 }
 
 .news_and_banners {
+    margin-top: 60px;
     display: flex;
     flex-direction: row;
+
+    &__cuption {
+        font-size: 24px;
+    }
 }
 
 .news {
     display: flex;
     flex-direction: column;
+    
+    &__item {
+        position: relative;
+    }
 }
+
+.news-date {
+    position: absolute;
+    top: 12px;
+    left: -17px;
+ 
+    &__block {
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        text-align: center;
+        
+        font-weight: bold;
+    }
+    
+    &__block--month {
+        background-color: #248cec;
+        font-size: 15px;
+        color: white;
+    }
+    
+    &__block--day {
+        background-color: #f4b60d;
+        font-size: 18px;
+        color: #2a2b2e;
+    }
+}
+
