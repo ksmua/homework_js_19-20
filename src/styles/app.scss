@@ -256,6 +256,10 @@ body {
     
     &__item {
         position: relative;
+        display: flex;
+        flex-direction:  row;
+        // margin-top: 50px;
+        margin-bottom: 30px;
     }
 }
 
@@ -286,3 +290,30 @@ body {
     }
 }
 
+.news_item__article-container {
+    padding-left: 35px;
+}
+
+.news_and_banners__cuption {
+    margin-bottom: 50px;
+}
+
+.banners{
+    padding-left: 40px; 
+}
+
+.accordion_panels {
+    list-style: none;
+    display: block;
+}
+
+.accordion_cuption {
+    line-height: 39px;
+    background-color: yellow;
+    padding-left: 39px;
+    text-transform: uppercase;
+}
+
+.accordion_content {
+    padding: 30px 0 40px 39px;
+}
