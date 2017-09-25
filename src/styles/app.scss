@@ -1,6 +1,6 @@
 body {
     background-color: lightgrey;
-    font-family: 'Ubuntu Medium';
+    font-family: "Ubuntu";
     // p {
     //     color: blue;
     // }
@@ -156,12 +156,14 @@ body {
 .articles {
     margin-top: 72px;
     display: flex;
+    display: -webkit-flex;
     flex-direction: row;
     justify-content: space-between;
 }
 .article_item {
     border: 1px solid blue;
     display: flex;
+    display: -webkit-flex;
     flex-direction: row;
     width: 360px;
 
@@ -226,6 +228,7 @@ body {
 .services-list {
     margin-top: 37px;
     display: flex;
+    display: -webkit-flex;
     flex-direction: row;
     justify-content: space-between;
     font-size: 16px;
@@ -243,20 +246,28 @@ body {
 .news_and_banners {
     margin-top: 60px;
     display: flex;
+    display: -webkit-flex;
     flex-direction: row;
+    
 
     &__cuption {
         font-size: 24px;
+        margin-bottom: 50px;
     }
 }
 
 .news {
+    flex-basis: 50%;
     display: flex;
+    display: -webkit-flex;
     flex-direction: column;
+    flex-grow: 1;
+    flex-shrink: 1;
     
     &__item {
         position: relative;
         display: flex;
+        display: -webkit-flex;
         flex-direction:  row;
         // margin-top: 50px;
         margin-bottom: 30px;
@@ -294,12 +305,13 @@ body {
     padding-left: 35px;
 }
 
-.news_and_banners__cuption {
-    margin-bottom: 50px;
-}
+
 
 .banners{
-    padding-left: 40px; 
+    flex-basis: 50%;
+    padding-left: 40px;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .accordion_panels {
@@ -308,10 +320,43 @@ body {
 }
 
 .accordion_cuption {
+    display: flex;
     line-height: 39px;
-    background-color: yellow;
-    padding-left: 39px;
     text-transform: uppercase;
+    
+    &__selector {
+        border: 1px solid #e8e8e8;
+        height: 39px;
+        width: 39px;
+        text-align: center;
+        background-color: inherit;
+        
+        &--active{
+            background-color: #f4b60d;
+            border-left-color: #f4b60d;
+            border-top-color: #f4b60d;
+            border-bottom-color: #f4b60d;
+            border-right-color: #f6c53d
+        }
+    }
+
+    &__content {
+        padding-left: 12px;
+        display: block;
+        border: 1px solid #e8e8e8;
+
+        &--active {
+            background-color: #f4b60d;
+            border-left-color: #f6c53d;
+            border-top-color: #f4b60d;
+            border-bottom-color: #f4b60d;
+            border-right-color: #f4b60d
+        }
+    }
+
+    &--active {
+        background-color: #f4b60d;
+    }
 }
 
 .accordion_content {
