@@ -11,6 +11,14 @@ body {
     margin: 0;
 }
 
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
 .positioner {
     width: 1160px;
     margin: 0 auto;
@@ -395,16 +403,48 @@ body {
 footer {
     background-color: #2a2d32;
 }
-.links_names {
+.links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
-    text-transform: uppercase;
-    
-    &__elem {
+    margin-top: 55px;
+    // &__group {
+        //     list-style: none;
+        // }
+        
+    &__goupname {
         width: 300px;
+        margin-bottom: 40px;
         text-align: left;
         border: 1px solid black;
+        text-transform: uppercase;
+        color: white;
     }
+
+    &__elem {
+        display: block;
+        width: 260px;
+        line-height: 35px;
+        color: #828385;
+        border-bottom: 1px solid #828385;
+
+        &:hover{
+            color: #248cec;
+        }
+    }
+}
+
+.final {
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    margin-top: 70px;
+    margin-left: 8px;
+    margin-right: 8px;
+    background-color: #35383c; 
+}
+
+.contacts {
+    color: #828385;
 }

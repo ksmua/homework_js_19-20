@@ -191,27 +191,72 @@
             </div>
             <div class="logotipes">
                 <ul class="logotipes__list positioner">
-                    <li><img src=<%= require("./img/bbp.png") %> alt="" ></li>
-                    <li><img src=<%= require("./img/moto_metal.jpg") %> alt="" ></li>
-                    <li><img src=<%= require("./img/2crave.png") %> alt="" ></li>
-                    <li><img src=<%= require("./img/atx.png") %> alt="" ></li>
-                    <li><img src=<%= require("./img/cruiser.png") %> alt="" ></li>
-                    <li><img src=<%= require("./img/Gear_.png") %> alt="" ></li>
+                    <li><a href="#"><img src=<%= require("./img/bbp.png") %> alt="" ></a></li>
+                    <li><a href="#"><img src=<%= require("./img/moto_metal.jpg") %> alt="" ></a></li>
+                    <li><a href="#"><img src=<%= require("./img/2crave.png") %> alt="" ></a></li>
+                    <li><a href="#"><img src=<%= require("./img/atx.png") %> alt="" ></a></li>
+                    <li><a href="#"><img src=<%= require("./img/cruiser.png") %> alt="" ></a></li>
+                    <li><a href="#"><img src=<%= require("./img/Gear_.png") %> alt="" ></a></li>
                 </ul>
             </div>
         </div>
         <!-- end content -->
-        <div class="footer">
+        <footer>
             <div class ="positioner">
-                <ul class ="links_names">
-                    <li class ="links_names__elem">socials</li>
-                    <li class ="links_names__elem">links</li>
-                    <li class ="links_names__elem">blogroll</li>
-                    <li class ="links_names__elem">about us</li>
+                <ul class ="links">
+                    <li>
+                        <ul>
+                            <li class ="links__goupname">socials</li>
+                            <li><a href="https://www.facebook.com" class ="links__elem">Facebook</a></li>
+                            <li><a href="https://www.flickr.com" class ="links__elem">Flickr</a></li>
+                            <li><a href="https://twitter.com" class ="links__elem">Twitter</a></li>
+                            <li><a href="https://vimeo.com" class ="links__elem">Vimeo</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class ="links__goupname">links</li>
+                            <li><a href="#" class ="links__elem">How to Write a Blog</a></li>
+                            <li><a href="#" class ="links__elem">Create a Blog in 4 Steps</a></li>
+                            <li><a href="#" class ="links__elem">15 Tips to Increase Traffic</a></li>
+                            <li><a href="#" class ="links__elem">20 Blog Post Ideas</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class ="links__goupname">blogroll</li>
+                            <li><a href="#" class ="links__elem">Blogs Blog</a></li>
+                            <li><a href="#" class ="links__elem">Roll Up Roll Up</a></li>
+                            <li><a href="#" class ="links__elem">Blog Free</a></li>
+                            <li><a href="#" class ="links__elem">Wordpress Blog</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul>
+                            <li class ="links__goupname">about us</li>
+                            <li><a href="#" class ="links__elem">Agriculture</a></li>
+                            <li><a href="#" class ="links__elem">Harvest</a></li>
+                            <li><a href="#" class ="links__elem">Company news</a></li>
+                            <li><a href="#" class ="links__elem">Investor relations</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
-            
-        </div>
+            <div class="final">
+                <div class="contacts positioner">
+                    <div class="contacts__address">
+                        <img src=<%= require("./img/location.png") %> alt="" ><span>BuildHomeLtd.  Street Name 123   23 45 Cityname</span>
+                    </div>
+                    <div class="contacts__phone">
+                        <img src=<%= require("./img/phone-potrait.png") %> alt="" ><span>BuildHomeLtd.  Street Name 123   23 45 Cityname</span>
+                    </div>
+                    <div class="contacts__mail">
+                        <img src=<%= require("./img/email.png") %> alt="" ><span>BuildHomeLtd.  Street Name 123   23 45 Cityname</span>
+                    </div>
+                    <p class="contacts__copyright">© 2014 Build Home</p>
+                </div>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
