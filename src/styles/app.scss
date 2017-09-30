@@ -416,9 +416,11 @@ footer {
     &__goupname {
         width: 300px;
         margin-bottom: 40px;
-        text-align: left;
         border: 1px solid black;
+        text-align: left;
         text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
         color: white;
     }
 
@@ -428,6 +430,7 @@ footer {
         line-height: 35px;
         color: #828385;
         border-bottom: 1px solid #828385;
+        font-size: 13px;
 
         &:hover{
             color: #248cec;
@@ -436,8 +439,6 @@ footer {
 }
 
 .final {
-    display: flex;
-    flex-direction: row;
     height: 60px;
     margin-top: 70px;
     margin-left: 8px;
@@ -446,5 +447,30 @@ footer {
 }
 
 .contacts {
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
     color: #828385;
+    font-size: 12px;
+
+    &__elem {
+        display: flex;
+        flex-direction: row;
+    }
+
+    &__phone {
+        margin-left: 30px;
+    }
+
+    &__mail {
+        margin-left: 40px;
+    }
+
+    &__copyright {
+        align-self: left;
+        border: 1px solid green;
+        text-align: right;
+        display: block;
+        // padding-right: 
+    }
 }
