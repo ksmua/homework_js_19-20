@@ -37,10 +37,10 @@ a {
 */
 
 .header {
-    border: 1px solid green;
+    // border: 1px solid green;
     //height: 40px;
-    background-color: cyan;
-    clear: both;
+    // background-color: cyan;
+    // clear: both;
 }
 
 .top {
@@ -76,9 +76,46 @@ a {
     flex-direction: row;
 
     &__item {
-        margin-left: 8px;
+        margin-left: 17px;
         list-style-type: none;
-        //display: inline-block;
+        display: flex;
+        align-items: center;
+        &--facebook {
+            // border: 1px solid blue;
+            display: block;
+            height: 17px;
+            width: 8px;
+            background: url(../img/social/facebook.png) no-repeat;
+        }
+        &--twitter {
+            // border: 1px solid blue;
+            display: block;
+            height: 13px;
+            width: 17px;
+            background: url(../img/social/twitter.png) no-repeat;
+            // background-position: center center;
+        }
+        &--rss {
+            // border: 1px solid blue;
+            display: block;
+            height: 17px;
+            width: 15px;
+            background: url(../img/social/rss.png) no-repeat;
+        }
+        &--linkedin {
+            // border: 1px solid blue;
+            display: block;
+            height: 16px;
+            width: 16px;
+            background: url(../img/social/linkedin.png) no-repeat;
+        }
+        &--skype {
+            // border: 1px solid blue;
+            display: block;
+            height: 16px;
+            width: 16px;
+            background: url(../img/social/skype.png) no-repeat;
+        }
     }
 }
 
