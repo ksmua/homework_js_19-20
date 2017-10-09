@@ -20,11 +20,11 @@
                 </div>
                 <div class="social">
                     <ul class="social_list">
-                        <li class="social_list__item"><img src=<%= require("./img/social/facebook.png") %> alt="facebook.png"></li>
-                        <li class="social_list__item"><img src=<%= require("./img/social/twitter.png") %> alt="twitter.png"></li>
-                        <li class="social_list__item"><img src=<%= require("./img/social/rss.png") %> alt="rss.png"></li>
-                        <li class="social_list__item"><img src=<%= require("./img/social/linkedin.png") %> alt="linkedin.png"></li>
-                        <li class="social_list__item"><img src=<%= require("./img/social/skype.png") %> alt="skype.png"></li>
+                        <a href="https://www.facebook.com/"><li class="social_list__item"><img src=<%= require("./img/social/facebook.png") %> alt="facebook.png"></li></a>
+                        <a href="https://twitter.com"><li class="social_list__item"><img src=<%= require("./img/social/twitter.png") %> alt="twitter.png"></li></a>
+                        <a href="#"><li class="social_list__item"><img src=<%= require("./img/social/rss.png") %> alt="rss.png"></li></a>
+                        <a href="https://www.linkedin.com"><li class="social_list__item"><img src=<%= require("./img/social/linkedin.png") %> alt="linkedin.png"></li></a>
+                        <a href="#"><li class="social_list__item"><img src=<%= require("./img/social/skype.png") %> alt="skype.png"></li></a>
                     </ul>
                 </div>
             </div>
@@ -99,7 +99,7 @@
                         <figcaption class="services-item__caption">Preventive Maintence</figcaption>
                     </figure>
                     <figure class="services-list__item">
-                        <p><img src=<%= require("./img/Tire&WheelServices.png") %> alt="Tire&WheelServices"></p>
+                        <p><img src=<%= require("./img/Tire&WheelServices.jpg") %> alt="Tire&WheelServices"></p>
                         <figcaption class="services-item__caption">Tire &#38; Wheel Services</figcaption>
                     </figure>
                     <figure class="services-list__item">
@@ -244,16 +244,20 @@
             </div>
             <div class="final">
                 <div class="contacts positioner">
-                    <div class="contacts__elem contacts__address">
-                        <img src=<%= require("./img/location.png") %> alt="" ><span>BuildHomeLtd.  Street Name 123   23 45 Cityname</span>
-                    </div>
+                    <!-- <div class="contacts__elem"> -->
+                        <a class="contacts__elem" href="#">
+                            <img class ="contacts__img" src=<%= require("./img/location.png") %> alt="" ><span>BuildHomeLtd.  Street Name 123   23 45 Cityname</span>
+                        </a>
+                    <!-- </div> -->
                     <div class="contacts__elem contacts__phone">
-                        <img src=<%= require("./img/phone-potrait.png") %> alt="" ><span>BuildHomeLtd.  Street Name 123   23 45 Cityname</span>
+                        <img class ="contacts__img" src=<%= require("./img/phone-potrait.png") %> alt="" ><span>+123 900 123 456</span>
                     </div>
-                    <div class="contacts__elem contacts__mail">
-                        <img src=<%= require("./img/email.png") %> alt="" ><span>BuildHomeLtd.  Street Name 123   23 45 Cityname</span>
-                    </div>
-                    <p class="contacts__copyright">© 2014 Build Home</p>
+                    <!-- <div class="contacts__elem contacts__mail"> -->
+                        <a class="contacts__elem contacts__mail" href="mailto:info@buildhome.web">
+                            <img class ="contacts__img" src=<%= require("./img/email.png") %> alt="" ><span>info@buildhome.web</span>
+                        </a>
+                    <!-- </div> -->
+                    <div class="contacts__elem contacts__copyright">&copy; 2014 Build Home</div>
                 </div>
             </div>
         </footer>

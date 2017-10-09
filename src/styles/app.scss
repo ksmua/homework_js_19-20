@@ -17,6 +17,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 .positioner {
@@ -244,6 +245,10 @@ a {
     &__item {
         width: 260px;
         text-align: center;
+        
+        &:hover {
+            color: #f4b60d;
+        }
     }
 }
 
@@ -452,10 +457,16 @@ footer {
     // justify-content: space-between;
     color: #828385;
     font-size: 12px;
+    align-items: center;
+    height: 100%;
 
     &__elem {
         display: flex;
         flex-direction: row;
+    }
+
+    &__img {
+        margin-right: 10px;
     }
 
     &__phone {
@@ -467,10 +478,9 @@ footer {
     }
 
     &__copyright {
-        align-self: left;
+        flex-grow: 1;
         border: 1px solid green;
         text-align: right;
         display: block;
-        // padding-right: 
     }
 }

@@ -27,7 +27,7 @@ module.exports = {
           publicPath: BILD_DIR,
           fallback: 'style-loader',
           use: [
-            {loader: 'css-loader', options: {sourceMap: true} }
+            {loader: 'css-loader', options: {sourceMap: true, url: false} }
           ]
         })
       },
@@ -49,6 +49,7 @@ module.exports = {
       {
         test: /\.(png|svg|jp?g|gif)$/,
         include: SRC_DIR,
+        exclude: /node_modules/,
         use: [
           {
             loader: 'file-loader',
@@ -59,6 +60,9 @@ module.exports = {
               useRelativePath: true
             }  
           }
+          // {
+          //   loader: 'url-loader?limit=1024&name=images/[name].[ext]'
+          // }
         ]
       },
       {
