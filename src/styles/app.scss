@@ -1,5 +1,5 @@
 body {
-    background-color: lightgrey;
+    // background-color: lightgrey;
     font-family: "Ubuntu";
     // p {
     //     color: blue;
@@ -23,7 +23,7 @@ a {
 .positioner {
     width: 1160px;
     margin: 0 auto;
-    border: 1px solid red;
+    // border: 1px solid red;
 }
 
 /*
@@ -85,14 +85,14 @@ a {
             display: block;
             height: 17px;
             width: 8px;
-            background: url(../img/social/facebook.png) no-repeat;
+            background: url(~images/social/facebook.png) no-repeat;
         }
         &--twitter {
             // border: 1px solid blue;
             display: block;
             height: 13px;
             width: 17px;
-            background: url(../img/social/twitter.png) no-repeat;
+            background: url(~images/social/twitter.png) no-repeat;
             // background-position: center center;
         }
         &--rss {
@@ -100,7 +100,7 @@ a {
             display: block;
             height: 17px;
             width: 15px;
-            background: url(../img/social/rss.png) no-repeat;
+            background: url(~images/social/rss.png) no-repeat;
         }
         &--linkedin {
             // border: 1px solid blue;
@@ -114,7 +114,7 @@ a {
             display: block;
             height: 16px;
             width: 16px;
-            background: url(../img/social/skype.png) no-repeat;
+            background: url(~images/social/skype.png) no-repeat;
         }
     }
 }
@@ -207,14 +207,14 @@ a {
     justify-content: space-between;
 }
 .article_item {
-    border: 1px solid blue;
+    // border: 1px solid blue;
     display: flex;
     display: -webkit-flex;
     flex-direction: row;
     width: 360px;
 
     &__num {
-        border: 1px solid green;
+        // border: 1px solid green;
         width: 80px;
         font-size: 90px;
         color: #efeff0;
@@ -227,18 +227,18 @@ a {
     }
 
     &__cuption {
-        border: 1px solid green;
+        // border: 1px solid green;
         font-size: 20px;
     }
 
     &__text {
-        border: 1px solid green;
+        // border: 1px solid green;
         font-size: 13px;
         font-family: Arial;
     }
 
     &__link {
-        border: 1px solid green;
+        // border: 1px solid green;
         align-self: flex-start;
         text-decoration: none;
         color: inherit;
@@ -252,11 +252,11 @@ a {
     display: block;
     width: 75px;
     // height: 15px;
-    background: url('~/../img/shape-1.gif') right center no-repeat;
+    background: url(../img/shape-1.gif) right center no-repeat;
 }
 
 .article_item__link:hover {
-    background: url('~/../img/shape-2.gif') right center no-repeat;
+    background: url(../img/shape-2.gif) right center no-repeat;
     color: #248cec;
 }
 
@@ -298,11 +298,12 @@ a {
 }
 
 .news_and_banners {
-    margin-top: 60px;
-    margin-bottom: 83px;
+    padding-top: 60px;
+    padding-bottom: 83px;
     display: flex;
     display: -webkit-flex;
     flex-direction: row;
+    background-color: #f7f7f7;
     
 
     &__cuption {
@@ -444,13 +445,13 @@ a {
 }
 footer {
     background-color: #2a2d32;
+    padding-top: 55px;
 }
 .links {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
-    margin-top: 55px;
     // &__group {
         //     list-style: none;
         // }
@@ -458,7 +459,7 @@ footer {
     &__goupname {
         width: 300px;
         margin-bottom: 40px;
-        border: 1px solid black;
+        // border: 1px solid black;
         text-align: left;
         text-transform: uppercase;
         font-size: 16px;
@@ -512,11 +513,14 @@ footer {
 
     &__mail {
         margin-left: 40px;
+        &:hover {
+            color: #248cec;
+        }
     }
 
     &__copyright {
         flex-grow: 1;
-        border: 1px solid green;
+        // border: 1px solid green;
         text-align: right;
         display: block;
     }

@@ -3,6 +3,7 @@
 const webpack = require("webpack");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ResolveUrlLoader = require('resolve-url-loader');
 
 const {resolve} = require('path'),
       SRC_DIR = resolve(__dirname, "src"),
@@ -27,7 +28,8 @@ module.exports = {
           publicPath: BILD_DIR,
           fallback: 'style-loader',
           use: [
-            {loader: 'css-loader', options: {sourceMap: true, url: false} }
+            {loader: 'css-loader', options: {url: false}},
+            // {loader: 'resolve-url-loader', options: {sourceMap: true} }
           ]
         })
       },
@@ -38,9 +40,17 @@ module.exports = {
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
           use: [
-            {loader: 'css-loader', options: {sourceMap: true} }, 
-            {loader: 'resolve-url-loader', options: {sourceMap: true} }, 
-            {loader: 'sass-loader', options: {sourceMap: true} }
+            {loader: 'css-loader' }, 
+            {loader: 'resolve-url-loader',
+             options: {
+                absolute: true,
+                // root: "/img"
+              } 
+            }, 
+            {loader: 'sass-loader', 
+              options: {url: false}
+              // options: {sourceMap: true} 
+            }
           ],
          
         })
@@ -49,22 +59,38 @@ module.exports = {
       {
         test: /\.(png|svg|jp?g|gif)$/,
         include: SRC_DIR,
-        exclude: /node_modules/,
         use: [
           {
             loader: 'file-loader',
             options: {
-              publicPath: '',
-              name: '[name].[ext]',
-              outputPath: 'img',
-              useRelativePath: true
-            }  
+              name: '[path][name].[ext]',
+              // useRelativePath: true,
+              outputPath: "" 
+            }
           }
-          // {
-          //   loader: 'url-loader?limit=1024&name=images/[name].[ext]'
-          // }
         ]
+        
       },
+
+      // {
+      //   test: /\.(png|svg|jp?g|gif)$/,
+      //   include: SRC_DIR,
+      //   exclude: /node_modules/,
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //       options: {
+      //         publicPath: '',
+      //         name: '[name].[ext]',
+      //         outputPath: '/img/',
+      //         useRelativePath: true
+      //       }  
+      //     }
+      //     // {
+      //     //   loader: 'url-loader?limit=1024&name=../img/[name].[ext]'
+      //     // }
+      //   ]
+      // },
       {
         test: /\.(woff|woff2|otf|ttf|eot)(\?[a-z0-9#=&.]+)?$/,
         include: SRC_DIR,
@@ -80,7 +106,13 @@ module.exports = {
       },
     ]
   },
-  
+  resolve: {
+    alias: {
+      // images: path.join(__dirname, 'src/img')
+      images: resolve(__dirname, 'src/img')
+    }
+  },
+
   plugins: [
     new HtmlWebpackPlugin({
         title: "Webpack test",
