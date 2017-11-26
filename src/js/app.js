@@ -8,7 +8,7 @@ var _ = require('lodash');
 
 //var $ = require('jquery'); 
 
-console.log("HI from app.js");
+// console.log("HI from app.js");
 
 
 $(document).ready(function(){
@@ -294,18 +294,31 @@ var dataJson = [
   }
 ]
 
-// for (var i = 0; i < dataJson.length; i++) {
-//   console.log('dataJson');
-//   console.log(dataJson[i]);
-// }
-var newArr = [];
-var skillsArr = _.sortBy(_.uniq(_.flattenDeep(_.map(dataJson, "skills"))), "skills", ["asc"]); //.skills.toLowerCase()
-skillsArr = skillsArr.sort();
-//  _.forEach(dataJson, function(elem){
-//   console.log(elem.skills);
-//   skillsArr.push(_.difference(elem.skills, skillsArr));
-//   console.log("skillsArr", skillsArr);
-  // return;
-// });
-console.log("skillsArr", skillsArr);
-// console.log("newArr", newArr);
+
+// ----------------------------------------------------
+var skillsArr = _.uniq(_.flattenDeep(_.map(dataJson, "skills")));
+console.log("All skils >>>", skillsArr);
+
+skillsArr = skillsArr.sort(function(a, b){
+  var itemA = a.toUpperCase();
+  var itemB = b.toUpperCase();
+  return (itemA < itemB) ? -1 : (itemA > itemB) ? 1 : 0;
+});
+
+console.log("Skills sorted by alphabet (not sensitive to the case of the letters) >>>", skillsArr);
+// ----------------------------------------------------
+
+var NameArr = _.map( _.sortBy(dataJson, function(elem){
+  // console.log("name: " + elem.name, " friends count: " + elem.friends.length);
+  return elem.friends.length;
+}), "name");
+
+console.log("Names sorted by friends number >>> ", NameArr);
+// ----------------------------------------------------
+
+var FriendsArr = _.uniq(_.map(_.flattenDeep(_.map(dataJson, "friends")), "name"));
+
+console.log("All friends >>> ", FriendsArr);
+
+// ----------------------------------------------------
+
