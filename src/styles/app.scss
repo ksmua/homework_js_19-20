@@ -85,14 +85,14 @@ a {
             display: block;
             height: 17px;
             width: 8px;
-            background: url(~images/social/facebook.png) no-repeat;
+            background: url(~/img/social/facebook.png) no-repeat;
         }
         &--twitter {
             // border: 1px solid blue;
             display: block;
             height: 13px;
             width: 17px;
-            background: url(~images/social/twitter.png) no-repeat;
+            background: url(~/img/social/twitter.png) no-repeat;
             // background-position: center center;
         }
         &--rss {
@@ -100,21 +100,21 @@ a {
             display: block;
             height: 17px;
             width: 15px;
-            background: url(~images/social/rss.png) no-repeat;
+            background: url(~/img/social/rss.png) no-repeat;
         }
         &--linkedin {
             // border: 1px solid blue;
             display: block;
             height: 16px;
             width: 16px;
-            background: url(../img/social/linkedin.png) no-repeat;
+            background: url(~/img/social/linkedin.png) no-repeat;
         }
         &--skype {
             // border: 1px solid blue;
             display: block;
             height: 16px;
             width: 16px;
-            background: url(~images/social/skype.png) no-repeat;
+            background: url(~/img/social/skype.png) no-repeat;
         }
     }
 }
@@ -217,9 +217,17 @@ a {
     }
 
     &__cuption {
-        // border: 1px solid green;
         font-size: 20px;
+
+        &:hover {
+            color: #248cec;
+        }
     }
+
+    // &__sub-cuption {
+    //     color: #248cec;
+    // }
+     
 
     &__text {
         // border: 1px solid green;
@@ -234,19 +242,23 @@ a {
     &__link {
         // border: 1px solid green;
         display: block;
-        width: 75px;
+        width: 87px;
         align-self: flex-start;
         text-decoration: none;
         color: inherit;
         font-size: 13px;
         line-height: 13px;
         font-weight: bold;
-        background: url(../img/shape-1.gif) right center no-repeat;
+        background: url(~/img/shape-1.gif) right center no-repeat;
         &:hover {
             color: #248cec;
-            background: url(../img/shape-2.gif) right center no-repeat;
+            background: url(~/img/shape-2.gif) right center no-repeat;
         }
     }
+}
+
+.article_item_blue{
+   color: #248cec;
 }
 
 .context_image {
@@ -390,17 +402,18 @@ a {
             border-left-color: #f4b60d;
             border-top-color: #f4b60d;
             border-bottom-color: #f4b60d;
-            border-right-color: #f6c53d
+            border-right-color: #f6c53d;
         }
     }
-
+    
     &__content {
         padding-left: 12px;
         display: block;
         border: 1px solid #e8e8e8;
         width: 100%;
-
+        
         &--active {
+            color: #ffffff;
             background-color: #f4b60d;
             border-left-color: #f6c53d;
             border-top-color: #f4b60d;

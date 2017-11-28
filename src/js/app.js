@@ -308,17 +308,17 @@ skillsArr = skillsArr.sort(function(a, b){
 console.log("Skills sorted by alphabet (not sensitive to the case of the letters) >>>", skillsArr);
 // ----------------------------------------------------
 
-var NameArr = _.map( _.sortBy(dataJson, function(elem){
+var nameArr = _.map( _.sortBy(dataJson, function(elem){
   // console.log("name: " + elem.name, " friends count: " + elem.friends.length);
   return elem.friends.length;
 }), "name");
 
-console.log("Names sorted by friends number >>> ", NameArr);
+console.log("Names sorted by friends number >>> ", nameArr);
 // ----------------------------------------------------
 
-var FriendsArr = _.uniq(_.map(_.flattenDeep(_.map(dataJson, "friends")), "name"));
+var friendsArr = _.uniq(_.map(_.flattenDeep(_.map(dataJson, "friends")), "name"));
 
-console.log("All friends >>> ", FriendsArr);
+console.log("All friends >>> ", friendsArr);
 
 // ----------------------------------------------------
 

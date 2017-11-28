@@ -4,7 +4,7 @@
   "description": "testreact",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack -d --watch",
+    "dev": "webpack-dev-server",
     "prod": "webpack -p"
   },
   "author": "ksm",
@@ -30,3 +30,4 @@
     "npm": "^5.3.0"
   }
 }
+
