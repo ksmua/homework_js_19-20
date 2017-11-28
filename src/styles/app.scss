@@ -128,27 +128,20 @@ a {
     justify-content: space-between;
 
     &__buttons {
-        //border: 1px solid black;
         height: 40px;
         display: flex;
         flex-direction: row;
-        // justify-content: center;
         list-style-type: none;
     }
     &__item {
-        // display: table-cell;
-        //border-left: 1px solid black;
         border-right: 1px solid black;
-        // vertical-align: middle;
     }
 }
 
 .menu_button {
-    // vertical-align: baseline;
     cursor: pointer;
     color: #ffffff;
     text-decoration: none;
-    // display: block;
     height: 100%;
     width: 100%;
     display: flex;
@@ -193,9 +186,6 @@ a {
         height: 20px;
         width: 20px;
         display: block;
-        // cursor: pointer;
-        //border: 1px solid white;
-        //background-image: url("/../img/search.png");
     }
 }
 
@@ -235,29 +225,32 @@ a {
         // border: 1px solid green;
         font-size: 13px;
         font-family: Arial;
+        line-height: 20px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        color:  #8a8a8a;
     }
 
     &__link {
         // border: 1px solid green;
+        display: block;
+        width: 75px;
         align-self: flex-start;
         text-decoration: none;
         color: inherit;
         font-size: 13px;
+        line-height: 13px;
         font-weight: bold;
+        background: url(../img/shape-1.gif) right center no-repeat;
+        &:hover {
+            color: #248cec;
+            background: url(../img/shape-2.gif) right center no-repeat;
+        }
     }
 }
 
-.article_item__link {
-    border: 1px solid black;
-    display: block;
-    width: 75px;
-    // height: 15px;
-    background: url(../img/shape-1.gif) right center no-repeat;
-}
-
-.article_item__link:hover {
-    background: url(../img/shape-2.gif) right center no-repeat;
-    color: #248cec;
+.context_image {
+    margin-bottom: 10px;
 }
 
 .services {
@@ -366,8 +359,7 @@ a {
 }
 
 
-
-.banners{
+.banners {
     flex-basis: 50%;
     padding-left: 40px;
     flex-grow: 1;
@@ -393,7 +385,7 @@ a {
         text-align: center;
         background-color: inherit;
         
-        &--active{
+        &--active {
             background-color: #f4b60d;
             border-left-color: #f4b60d;
             border-top-color: #f4b60d;
@@ -452,9 +444,6 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
-    // &__group {
-        //     list-style: none;
-        // }
         
     &__goupname {
         width: 300px;
