@@ -6,26 +6,26 @@ $(document).ready(function () {
 
   var cuptions = document.getElementsByClassName("accordion_cuption");
   for (var i=0; i < cuptions.length; i++){
-    console.log(cuptions[i]);
+    // console.log(cuptions[i]);
     cuptions[i].className = "accordion_cuption";
   }
 
   var cuptionSelector = document.getElementsByClassName("accordion_cuption__selector");
   for (var i=0; i < cuptionSelector.length; i++){
-    console.log(cuptionSelector[i]);
+    // console.log(cuptionSelector[i]);
     cuptionSelector[i].className = "accordion_cuption__selector";
     cuptionSelector[i].innerHTML = "+";
   }
 
   var cuptionSelector = document.getElementsByClassName("accordion_cuption__content");
   for (var i=0; i < cuptionSelector.length; i++){
-    console.log(cuptionSelector[i]);
+    // console.log(cuptionSelector[i]);
     cuptionSelector[i].className = "accordion_cuption__content";
   }
 
   var cuptionSelector = document.getElementsByClassName("accordion_content");
   for (var i=0; i < cuptionSelector.length; i++){
-    console.log(cuptionSelector[i]);
+    // console.log(cuptionSelector[i]);
     cuptionSelector[i].className = "accordion_content";
   }
 

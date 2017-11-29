@@ -1,17 +1,25 @@
 $(document).ready(function () {
-  console.log("serviceshover");
+  console.log("Start serviceshover >>>");
   
-  $("services-list__img").each(function(){
-    // console.log("click");
+  // $("#cli").click(function () {
+  //   console.log("mousein");
+  // });
+
+  $(".services-list__item").each(function(){
+    // console.log("list__caption");
     
-    $(this).mousein(function(){
+    $(this).click(function(){
+      console.log("click");
+    });
+
+    $(this).mouseover(function(){
       // $(this).css("border", "3px solid red");
-      console.log("mousein");
+      console.log("mouseover");
     });
     
     $(this).mouseout(function(){
       console.log("mouseout");
-      /*  */$(this).css("border", "none");
+      //(this).css("border", "1px solid red");
     });
   });
 });

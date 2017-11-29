@@ -28,7 +28,7 @@ module.exports = {
           publicPath: BILD_DIR,
           fallback: 'style-loader',
           use: [
-            {loader: 'css-loader', options: {url: false}},
+            {loader: 'css-loader'},
             // {loader: 'resolve-url-loader', options: {sourceMap: true} }
           ]
         })
@@ -131,6 +131,6 @@ module.exports = {
   ],
 
   devServer: {
-    contentBase: SRC_DIR,  // New
+    contentBase: BILD_DIR,  // New
   },
 };
