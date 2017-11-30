@@ -131,6 +131,6 @@ module.exports = {
   ],
 
   devServer: {
-    contentBase: BILD_DIR,  // New
+    contentBase: SRC_DIR,  // New
   },
 };

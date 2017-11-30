@@ -1,12 +1,8 @@
 body {
-    // background-color: lightgrey;
     font-family: "Ubuntu Medium";
-    // p {
-    //     color: blue;
-    // }
 }
 
-*{
+* {
     padding: 0;
     margin: 0;
 }
@@ -23,25 +19,7 @@ a {
 .positioner {
     width: 1160px;
     margin: 0 auto;
-    // border: 1px solid red;
 }
-
-/*
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-    color: green;
-    background-color: red;
-}
-*/
-
-// .header {
-//     // border: 1px solid green;
-//     //height: 40px;
-//     // background-color: cyan;
-//     // clear: both;
-// }
 
 .top {
     display: flex;
@@ -54,16 +32,18 @@ a {
     height: 36px;
     display: flex;
     flex-direction: row;
-    //justify-content: space-between;
+
     &__text {
         margin-left: 5px;
         display: flex;
         flex-direction: column;
         color: #434343;
     }
+
     &__h1 {
         font-size: 20px;
     }
+
     &__subtext {
         color: #333333;
         text-transform: uppercase;
@@ -80,37 +60,32 @@ a {
         list-style-type: none;
         display: flex;
         align-items: center;
+
         &--facebook {
-            // border: 1px solid blue;
             display: block;
             height: 17px;
             width: 8px;
             background: url(~/img/social/facebook.png) no-repeat;
         }
         &--twitter {
-            // border: 1px solid blue;
             display: block;
             height: 13px;
             width: 17px;
             background: url(~/img/social/twitter.png) no-repeat;
-            // background-position: center center;
         }
         &--rss {
-            // border: 1px solid blue;
             display: block;
             height: 17px;
             width: 15px;
             background: url(~/img/social/rss.png) no-repeat;
         }
         &--linkedin {
-            // border: 1px solid blue;
             display: block;
             height: 16px;
             width: 16px;
             background: url(~/img/social/linkedin.png) no-repeat;
         }
         &--skype {
-            // border: 1px solid blue;
             display: block;
             height: 16px;
             width: 16px;
@@ -133,6 +108,7 @@ a {
         flex-direction: row;
         list-style-type: none;
     }
+    
     &__item {
         border-right: 1px solid black;
     }
@@ -197,15 +173,14 @@ a {
     flex-direction: row;
     justify-content: space-between;
 }
+
 .article_item {
-    // border: 1px solid blue;
     display: flex;
     display: -webkit-flex;
     flex-direction: row;
     width: 360px;
 
     &__num {
-        // border: 1px solid green;
         width: 80px;
         font-size: 90px;
         color: #efeff0;
@@ -226,7 +201,6 @@ a {
     }
 
     &__text {
-        // border: 1px solid green;
         font-size: 13px;
         font-family: Arial;
         line-height: 20px;
@@ -236,7 +210,6 @@ a {
     }
 
     &__link {
-        // border: 1px solid green;
         display: block;
         width: 87px;
         align-self: flex-start;
@@ -273,7 +246,7 @@ a {
     padding-top: 44px;
     font-size: 24px;
 }
-.services-list {
+.services_list {
     margin-top: 37px;
     display: flex;
     display: -webkit-flex;
@@ -294,9 +267,6 @@ a {
         margin-top: 35px;
     }
 }
-
-// .services-item__caption {
-// }
 
 .news_and_banners_wrapper {
     background-color: #f7f7f7;
@@ -330,7 +300,6 @@ a {
         display: flex;
         display: -webkit-flex;
         flex-direction:  row;
-        // margin-top: 50px;
         margin-bottom: 30px;
 
         &:last-child {
@@ -477,11 +446,9 @@ footer {
     &__goupname {
         width: 300px;
         margin-bottom: 40px;
-        // border: 1px solid black;
         text-align: left;
         text-transform: uppercase;
         font-size: 16px;
-        // font-weight: bold;
         color: white;
     }
 
@@ -493,7 +460,7 @@ footer {
         border-bottom: 1px solid #828385;
         font-size: 13px;
 
-        &:hover{
+        &:hover {
             color: #248cec;
         }
     }
@@ -510,7 +477,6 @@ footer {
 .contacts {
     display: flex;
     flex-direction: row;
-    // justify-content: space-between;
     color: #828385;
     font-size: 12px;
     align-items: center;
@@ -531,6 +497,7 @@ footer {
 
     &__mail {
         margin-left: 40px;
+        
         &:hover {
             color: #248cec;
         }
@@ -538,8 +505,21 @@ footer {
 
     &__copyright {
         flex-grow: 1;
-        // border: 1px solid green;
         text-align: right;
         display: block;
     }
+}
+
+//===============================
+.fade_block {
+    display: block;
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    background-color: rgba(46, 140, 227, 0.5);
+    font-family: serif;
+    font-size: 55px;
+    text-align: center;
+    line-height: 260px;
+    color: white;
 }

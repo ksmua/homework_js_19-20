@@ -12,7 +12,6 @@ var _ = require('lodash');
 
 
 $(document).ready(function(){
-  console.log("> bxslider -->");
   $('.bxslider').bxSlider();
 });
 
@@ -296,8 +295,8 @@ var dataJson = [
 
 
 // ----------------------------------------------------
+
 var skillsArr = _.uniq(_.flattenDeep(_.map(dataJson, "skills")));
-console.log("All skils >>>", skillsArr);
 
 skillsArr = skillsArr.sort(function(a, b){
   var itemA = a.toUpperCase();
@@ -306,14 +305,15 @@ skillsArr = skillsArr.sort(function(a, b){
 });
 
 console.log("Skills sorted by alphabet (not sensitive to the case of the letters) >>>", skillsArr);
+
 // ----------------------------------------------------
 
 var nameArr = _.map( _.sortBy(dataJson, function(elem){
-  // console.log("name: " + elem.name, " friends count: " + elem.friends.length);
   return elem.friends.length;
 }), "name");
 
 console.log("Names sorted by friends number >>> ", nameArr);
+
 // ----------------------------------------------------
 
 var friendsArr = _.uniq(_.map(_.flattenDeep(_.map(dataJson, "friends")), "name"));
